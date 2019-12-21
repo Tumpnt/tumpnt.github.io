@@ -1,4 +1,5 @@
 ---
+title: Home
 ---
 
 {% for project in site.projects %}
