@@ -1,0 +1,64 @@
+title: tumpnt
+description: > # this means to ignore newlines until "baseurl:"
+  Group Projects
+base-url: ""
+url: "https://tumpnt.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+repository: tumpnt/tumpnt.github.io
+
+favicon: https://avatars2.githubusercontent.com/u/58997656?s=200&v=4
+
+collections:
+project:
+  output: true
+
+permalink: pretty
+production: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jemoji
+  - jekyll-mentions
+  - jekyll-include-cache
+
+# Build settings
+markdown: kramdown
+# theme: minima
+
+kramdown:
+  # Enable GitHub Flavored Markdown (fenced code blocks)
+  input: GFM
+  # Disable auto-generated ID's for headings
+  auto_ids: false
+
+excludes:
+  - lib
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - bower.json
+  - "*.sh"
+  - README.md
+  - gulffile.js
+  - package.json
+  - vendor
+  - ".gitignore"
+  - CNAME
+  - icomoon-selection.json
+
+
+  
+defaults:
+- scope:
+    path: ""
+  values:
+    image: /favicon.ico
+- scope:
+    path: ""
+    type: projects
+  values:
+    layout: project
+  
