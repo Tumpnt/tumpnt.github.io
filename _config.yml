@@ -8,8 +8,8 @@ repository: tumpnt/tumpnt.github.io
 favicon: https://avatars2.githubusercontent.com/u/58997656?s=200&v=4
 
 collections:
-project:
-  output: true
+  projects:
+    output: true
 
 permalink: pretty
 production: true
